@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,45 +15,50 @@
 </head>
 <body>
     <!-- Header Content -->
-    <header class="justify-between items-center p-4 bg-gray-800 text-white flex">
+    <header class="justify-between items-center p-4 bg-white text-gray-800 flex">
 
         <!-- logo -->
         <div class="logo flex items-center">
             <img src="assets/nurCreativeLogo.svg" alt="Logo" class="h-10 pr-2">
-            <span class="ml-2 font-bold text-lg">Nur Creative</span>
+            <span class="ml-2 font-bold text-lg hidden sm:inline">Nur Creative</span>
         </div>
 
         <!-- Navigation Menu -->
         <nav class="flex space-x-4">
-            <ul class="flex space-x-4">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#message">Message Us</a></li>
+            <ul class="flex space-x-4 font-semibold">
+                <li class="hover:text-blue-500"><a href="#home">Home</a></li>
+                <li class="hover:text-blue-500"><a href="#profile">Profile</a></li>
+                <li class="hover:text-blue-500"><a href="#portfolio">Portfolio</a></li>
+                <li class="hover:text-blue-500"><a href="#message">Message Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <hr>
-
     <!-- Main Content -->
     <main>
         <!-- Home -->
-        <section id="home" class="p-4 h-screen flex flex-col justify-center items-center ">
-            <h1 class="text-3xl font-bold mb-4 ">Hello <span id="username"></span>!, Welcome to My portfolio</h1>
-            <p>Your journey to becoming a coding expert starts here!</p>
+        <section id="home" 
+        class="p-4 h-screen flex flex-col justify-center items-center bg-bottom bg-cover text-white text-center" 
+        style="background-image: url('assets/clement-m-igX2deuD9lc-unsplash.jpg');">
+            <h1 class="text-3xl font-bold mb-4 ">Hello <span id="username"></span>!, <br> Welcome to My portfolio</h1>
+            <p >My journey to becoming a coding expert starts here!</p>
+            <button class="mt-4 bg-blue-500 text-white p-2 hover:bg-blue-600 rounded">
+                <a href="#profile">Learn More</a>
+            </button>
+            
         </section>
         <hr>
 
         <!-- Profile -->
-        <section id="profile" class="p-4 h-screen flex flex-col justify-center items-center ">
+        <section id="profile" class="p-4 h-screen flex flex-col justify-center items-center bg-blue-500 text-white">
             <h2 class="text-2xl font-bold mb-4">Profile</h2>
-            <p>Learn more about our instructors and team members.</p>
+            <p class="text-xl font-semibold">About Me.</p>
+            <p class="max-w-md text-center">Software engineering is the discipline of designing, developing, testing, and maintaining software applications. It combines principles from computer science, engineering, and project management to create reliable and efficient solutions that meet user needs.</p>
         </section>
         <hr>
 
         <!-- Portfolio -->
-        <section id="portfolio" class="p-4 h-screen flex flex-col justify-center items-center ">
+        <section id="portfolio" class="p-4 h-screen flex flex-col justify-center items-center bg-gray-800 text-white">
             <h2 class="text-2xl font-bold mb-4">Portfolio</h2>
             <p>Check out some of the amazing projects created by our students.</p>
         </section>
@@ -74,7 +79,7 @@
 
     <!-- Footer Content -->
     <footer>
-        <p class="text-center p-4 bg-gray-800 text-white">&copy; 2025 CodingCamp. All rights reserved.</p>
+        <p class="text-center p-4 bg-gray-800 text-white">&copy; 2025 nurCreative. All rights reserved.</p>
     </footer>
 
     <!-- JavaScript Content -->
